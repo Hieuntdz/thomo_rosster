@@ -1,0 +1,56 @@
+import 'package:flutter/material.dart';
+
+import '../api/fetch_api.dart';
+import '../model/constants.dart';
+import '../model/photos.dart';
+import '../widgets/logo.dart';
+import '../widgets/wallpaper_list.dart';
+
+class SearchQuery extends StatefulWidget {
+  final String queryController;
+
+  const SearchQuery({super.key, required this.queryController});
+
+  @override
+  State<SearchQuery> createState() => _SearchQueryState();
+}
+
+class _SearchQueryState extends State<SearchQuery> {
+  // final TextEditingController queryController = queryController;
+  late List<String> photosList;
+  int page = 1;
+  bool isLoading = false;
+
+  Future<void> _fetchData() async {
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    photosList = [];
+    _fetchData();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: kBackgroundColor,
+      appBar: AppBar(
+        backgroundColor: kBackgroundColor,
+        foregroundColor: Colors.white,
+        elevation: 0,
+        centerTitle: true,
+        title: logo(),
+      ),
+      body: Column(
+        children: [
+          // SearchBar(queryController: widget.queryController),
+          const SizedBox(height: 25),
+          Expanded(
+            child: wallpaperList(context, photosList: photosList),
+          ),
+        ],
+      ),
+    );
+  }
+}

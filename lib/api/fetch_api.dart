@@ -1,0 +1,19 @@
+List<String> urlData = [
+  "https://i.imgur.com/NEOnOIc.jpg",
+  "https://i.imgur.com/XurEJ0d.jpg",
+  "https://i.imgur.com/F9VRT7D.jpg",
+  "https://i.imgur.com/PllgbFe.jpg",
+  "https://i.imgur.com/zPw7xJ8.jpg",
+  "https://i.imgur.com/xzEThqx.jpg",
+  "https://i.imgur.com/IHsJZKv.jpg",
+  "https://i.imgur.com/qs4LYCV.jpg",
+  "https://i.imgur.com/m5rajeg.jpg",
+  "https://i.imgur.com/DQlxDz4.jpg",
+  "https://i.imgur.com/bLLlkNO.jpg",
+  "https://i.imgur.com/nGqPZFC.jpg",
+  "https://i.imgur.com/oE2zRjd.jpg",
+  "https://i.imgur.com/fzsTsIY.jpg",
+  "https://i.imgur.com/iBItaC7.jpg",
+  "https://i.imgur.com/XSFY219.jpg",
+  "https://i.imgur.com/MuA06pL.jpg"
+];
